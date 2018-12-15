@@ -39,6 +39,7 @@ public class FootballApp {
         //Begin procedure to prompt user if they want to search for a player by their jersey number
         Scanner in = new Scanner (System.in);
         System.out.println("Would you like to search for a plyer by their jersy number? (Y/N) ");
+        System.out.flush(); //added line to ensure stream buffer was clear before taking input
         String searchQuestion = in.nextLine();
         if (searchQuestion.contains("Y")) { 
             System.out.println("What is the jersey number you wish to search for? ");
